@@ -1,0 +1,345 @@
+/* Styles for header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253. 245, 93); /* Change to desired background color */
+    color: #black; /* Change to desired text color */
+    height: 80px; /* Adjust height as needed */
+    padding: 50px;
+}
+
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Styles for logo */
+.logo {
+    width: 75px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+/* Styles for title */
+.title {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: normal;
+    margin-left: 10px; /* Adjust margin as needed */
+    line-height: 8px;
+}
+
+/* Styles for tagline */
+.tagline {
+    font-size: 16px; /* Adjust font size as needed */
+    margin-left: 10px; /* Adjust margin as needed */
+    line-height: 8px;
+}
+
+/* Styles for navigation */
+nav {
+    margin-left: 30px;
+    align-items:center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items:center;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Adjust margin as needed */
+    align-items:center;
+}
+
+nav ul li a {
+    color: black; /* Change to desired text color */
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size as needed */
+    align-items:center;
+    
+}
+
+/* Styles for title and tagline container */
+.header-text {
+    text-align: left; /* Center the content horizontally */
+}
+
+
+nav ul li a:hover {
+  --_i: 100%;
+  transition: .3s, background-size .3s .3s;
+}
+
+/* Media query that adjust the contents when the screen is smaller */
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px; /* Adjusted padding */
+        justify-content: center;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+        margin-right: 0px;
+       
+        
+    }
+
+    .title, .tagline {
+        text-align: center; /* Centering title and tagline */
+    }
+
+    nav {
+        margin: 20px auto; /* Centering navigation */
+    }
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+    
+}
+
+
+a {
+  background: linear-gradient(0deg, rgb(255,232,24), rgb(255,232,24)) no-repeat center bottom / 0 var(--bg-h);
+  margin-bottom; 5px;
+  transition: background-size 1200ms;
+  --bg-h: 7%;
+  padding: 10px;
+ 
+}
+a:where(:hover, :focus-visible) {
+  background-size: 300% var(--bg-h);
+  background-position-x: bottom;
+  
+}
+
+.underline {
+  padding-bottom: 0x;
+  --bg-h: 5px;
+  
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+viddy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("luckyland.png");
+    background-color: rgb(253. 245, 93); /* Change to desired background color */
+    color: #black; /* Change to desired text color */
+    height: 100vh; /* Adjust height as needed */
+}
+
+/* HEADER */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", sans-serif;
+
+
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 40%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: orange;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+  max-width: 300px;
+  white-space: pre-wrap;
+
+}
+
+p {
+
+  width: 100%;
+  line-height: 20px;
+  margin: 5px 0;
+  max-width: 350px;
+  white-space: pre-wrap;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+  width: 200px;
+}
+
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
